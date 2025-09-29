@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Wala - Authentic Indian Chai from Tanuku</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        a { text-decoration: none; color: inherit; }
+        nav { background: #8B4513; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav li { margin: 0 1rem; }
+        nav a { color: white; font-weight: bold; }
+        section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+        h1, h2, h3 { color: #8B4513; }
+        .btn { background: #ff6b6b; color: white; padding: 0.8rem 1.5rem; border-radius: 5px; display: inline-block; transition: background 0.3s; }
+        .btn:hover { background: #ff5252; }
+        .urgency { background: #ffcc00; padding: 1rem; text-align: center; position: sticky; bottom: 0; z-index: 100; }
+        footer { background: #8B4513; color: white; text-align: center; padding: 2rem; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; } section { padding: 2rem 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#chai-types">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#store">Store</a></li>
+        </ul>
+    </nav>
+
+    <!-- Updated Hero Section -->
+    <section id="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'); background-size: cover; height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px;">
+        <h1 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Discover Authentic Indian Chai – Brewed with Tradition, Delivered to Your Door</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px;">From Tanuku's Heart: Masala, Irani & Kahwa Blends Starting at ₹50. Relax with Every Sip.</p>
+        
+        <!-- Carousel -->
+        <div id="carousel" style="width: 100%; max-width: 800px; height: 300px; overflow: hidden; border-radius: 10px; margin-bottom: 2rem;">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Masala Chai" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+        
+        <a href="#chai-types" class="btn" style="font-size: 1.1rem; font-weight: bold;">Order Now & Save 20% on First Batch</a>
+    </section>
+
+    <!-- Our Story Section (With CTA) -->
+    <section id="story" style="background: #f9f9f9; text-align: center;">
+        <h2>Our Story</h2>
+        <p style="max-width: 800px; margin: 0 auto 2rem;">"Hello, it's my first time sharing my thoughts and ideas, and it marks my initial step into the business field journey. When it comes to chai in India, it has become an emotional drink for people of all walks of life. Nowadays, even famous figures like Bill Gates are meeting Indian Chai Wala to taste the authentic brew. This incident showcases the power of Indian chai-making. I aim to start a professional chai business with this website, and I kindly ask people to support me in this endeavor."</p>
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chai Preparation" style="max-width: 100%; border-radius: 10px;">
+        <a href="#chai-types" class="btn" style="margin-top: 1rem;">Support My Journey – Order Today</a>
+    </section>
+
+    <!-- Blog Section (With Inline CTA) -->
+    <section id="blog">
+        <h2>A Tranquil Sip: The Soothing Essence of Indian Chai</h2>
+        <p style="max-width: 800px; margin: 0 auto 1rem;">Steeped in tradition and infused with fragrant spices, Indian chai is a sensory journey through the heart of India. Each sip tells a story of ancient rituals, hospitality, and community. The blend of bold black tea with cardamom, cinnamon, and ginger creates a symphony of flavors. This cherished brew is not just a drink, but a comforting embrace, warming both the body and soul.</p>
+        <p style="text-align: center; margin: 2rem 0;"><a href="#chai-types" class="btn">Ready to Experience? Order Masala Chai Now</a></p>
+    </section>
+
+    <!-- Updated Chai Types Section -->
+    <section id="chai-types">
+        <h2>Our Signature Chai Blends</h2>
+        <div class="chai-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+            <!-- Irani Chai Card -->
+            <div class="chai-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1615486365746-7c0f3f3f2e5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Irani Chai" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3>IRANI CHAI</h3>
+                    <ul style="text-align: left; color: #666; margin-bottom: 1rem; list-style: none;">
+                        <li>• Rich, aromatic tea with Persian roots</li>
+                        <li>• Brewed with strong black leaves & milk</li>
+                        <li>• Perfect balance of sweetness & robust flavor</li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: #999; margin-bottom: 1rem;">₹60 per cup – Enjoy with savory biscuits!</p>
+                    <a href="#store" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Masala Chai Card -->
+            <div class="chai-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Masala Chai" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3>MASALA CHAI</h3>
+                    <ul style="text-align: left; color: #666; margin-bottom: 1rem; list-style: none;">
+                        <li>• Quintessential Indian blend of robust black tea</li>
+                        <li>• Infused with cardamom, cinnamon, ginger & cloves</li>
+                        <li>• Comforting warmth in every sip</li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: #999; margin-bottom: 1rem;">₹50 per cup – Cozy indulgence with snacks!</p>
+                    <a href="#store" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Kashmiri Kahwa Card -->
+            <div class="chai-card" style="background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1628258334165-4e9d4e0b7d3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Kashmiri Kahwa" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: 1.5rem;">
+                    <h3>KASHMIRI KAHWA</h3>
+                    <ul style="text-align: left; color: #666; margin-bottom: 1rem; list-style: none;">
+                        <li>• Traditional green tea from Kashmir's valleys</li>
+                        <li>• Symphony of saffron, cardamom & almonds</li>
+                        <li>• Fragrant & invigorating ritual</li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: #999; margin-bottom: 1rem;">₹70 per cup – Sensory journey with honey!</p>
+                    <a href="#store" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: #f9f9f9; text-align: center;">
+        <h2>Get In Touch</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 800px; margin: 2rem auto;">
+            <div>
+                <h3>Location</h3>
+                <p>Tanuku, near Women's College<br>West Godavari, AP, India 534211</p>
+            </div>
+            <div>
+                <h3>Hours</h3>
+                <p>Monday–Sunday<br>9am – 11pm</p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>dmkumarip204@gmail.com<br>+91-996642237</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Banner -->
+    <div class="urgency">
+        <p>Limited Stock: 50% Off First Order – Ends in 24 Hours! <a href="#chai-types" class="btn" style="margin-left: 1rem; font-size: 0.9rem;">Claim Now</a></p>
+    </div>
+
+    <footer id="store">
+        <p>&copy; 2025 Chai Wala. Authentic Brews from Tanuku. | Secure Checkout | 100% Authentic Spices Guarantee</p>
+    </footer>
+
+    <script>
+        // Hero Carousel
+        const images = [
+            'https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+            'https://images.unsplash.com/photo-1615486365746-7c0f3f3f2e5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+            'https://images.unsplash.com/photo-1628258334165-4e9d4e0b7d3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        ];
+        let currentImg = 0;
+        const carousel = document.getElementById('carousel');
+        setInterval(() => {
+            currentImg = (currentImg + 1) % images.length;
+            carousel.innerHTML = `<img src="${images[currentImg]}" alt="Chai Type" style="width: 100%; height: 100%; object-fit: cover; display: block;">`;
+        }, 3000);
+
+        // Chai Cards Hover
+        document.querySelectorAll('.chai-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 8px 16px rgba(0,0,0,0.2)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
+            });
+        });
+
+        // Simple Countdown for Urgency (Demo – Update with real timer)
+        setInterval(() => {
+            // Add real countdown JS here if needed
+        }, 1000);
+    </script>
+</body>
+</html>
